@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Kavoon);
+@import url(http://fonts.googleapis.com/css?family=Keania+One);
+@import url(http://fonts.googleapis.com/css?family=Englebert);
+html{
+    margin: 0px;
+    padding: 0px;
+    background: url('star.jpg');
+    background-position:center;
+	cursor: url(Arrow3.cur),auto;
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 5s;
+    -ms-transition-duration: 5s;
+    -o-transition-duration: 5s;
+     transition-duration: 5s;
+
+    
+}
+body{
+    width: 1000px;
+    
+}
+h1{
+    text-shadow: 5px 5px 5px green;
+    z-index: 100;
+    font-family: 'Englebert', sans-serif;
+}
+p{
+    font-family: 'Englebert', sans-serif;
+}
+h3{
+    color: black;
+    font-family: 'Englebert', sans-serif;
+    font-size: larger;
+}
+#big_wrapper{
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+	width: 800px;
+	height: 380px;
+    margin-left: 130px;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-left: 150px;
+    box-shadow: 0px 0px 30px white;
+    background-color: #fffdba;
+	background-image: -moz-linear-gradient(top, #ffffff, #000000);
+	background-image: -ms-linear-gradient(top, #ffffff, #000000);
+	background-image: -o-linear-gradient(top, #ffffff, #000000);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#000000));
+	background-image: -webkit-linear-gradient(top, #ffffff, #000000);
+	background-image: linear-gradient(top, #ffffff, #000000);
+	border: 5px solid white;
+	border-radius: 50px;
+ }
+
+#title_name{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    color: white;
+    font-family: 'Keania One', cursive;
+}
+
+#title_name:hover{
+	text-shadow: 5px 5px 5px white;
+    color: green;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+     transition-duration: 2s;
+}
+
+#footer h3{
+    color: white;
+    text-align: right;
+    position: relative;
+    padding-left: 1200px;
+	display: inline;
+	-webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+
+}
+#footer h3:hover{
+    color: green;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+     transition-duration: 2s;
+}
+
+#footer {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    left: -800px;
+}
+
+
+#upload_image{
+    height: 50px;
+    width: 50px;
+    left: 50px;
+    position: relative;
+    bottom:95px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+}
+#upload_image:hover{
+	-webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+}
+#desc{
+    height: 60px;
+    width: 150px;
+    background: green;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    top: 320px;
+    left: 570px;
+    border: 5px solid black;
+    border-radius: 20px;
+     -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+	opacity: 0;
+    font-size: large;
+    font-stretch: condensed;
+    
+}
+#desc:hover{
+    opacity: 1;
+    top: 230px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+}
+
+
+#user_in_page{
+    color: black;
+    font-size: xx-large;
+    float: none;
+    position: absolute;
+    top: 80px;
+    left: 570px;
+    
+}
+#logout{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    
+}
+#logout a:link{
+    color: white;
+    font-size: x-large;
+}
+#logout a:visited{
+    color: white;
+}
+
+
+#login_title{
+    font-size: xx-large;
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    font-family: 'Kavoon', cursive;
+}

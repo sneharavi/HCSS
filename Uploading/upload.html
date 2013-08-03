@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>AMISTOSOO FILE UPLOAD</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+         <script type="text/javascript">
+            function validateForm()
+            {
+                var x=document.forms["upload_form"]["name"].value;
+                if (x==null || x=="")
+                 {
+                     alert("Fill the name");
+                    return false;
+                }
+                var a=document.forms["upload_form"]["file_img"].value;
+                var b=document.forms["upload_form"]["file_img"].value;
+                var c=document.forms["upload_form"]["file_img"].value;
+                 if (a==null || a==""||b==null || b==""||c==null || c=="" )
+                 {
+                     alert("Select the file");
+                    return false;
+                }
+            }    
+    
+        
+        </script>
+         
+    </head>
+    <body>
+        
+        <h1 id="title_name">AMISTOSOO FILE-SHARING UPLOAD</h1>
+        <p id="user_in_page">Welcome</p>
+       
+    <section id="big_wrapper">
+        <form action="upload.jsp" method="post" enctype="multipart/form-data"  onsubmit="return validateForm()" name="upload_form">
+            
+            <label><h3>Enter Filename:</h3> </label>
+            <input type="text" name="name"></input>
+            <br />
+            <br />
+            
+            <label for="file"><h3>Upload your file here:</h3></label>
+			<b>Image: </b><input type="file" accept="image/*" name="file" id="file"><br />
+			<b>Audio: </b><input type="file" accept="audio/*" name="file_audio" id="file"><br />
+			<b>Video: </b><input type="file" accept="video/*" name="file_video" id="file"><br />
+                <pre>               
+				<input type="image" name="submit" value="submit" src="up.png" id="upload_image"/>
+				<div id="desc"><p>Click here to upload</p></div> 
+				</pre>
+        </form>
+        
+        <div id="footer">
+            <h3>&copy;2013 All Rights Reserved. Developed by AMISTOSOO</h3>
+        </div>
+        <a href="" id="logout">LOGOUT</a>
+    </section>
+    </body>
+</html>
+ 

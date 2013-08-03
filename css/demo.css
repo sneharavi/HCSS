@@ -1,0 +1,32 @@
+#title
+{	
+	font-family: 'Comic Sans MS';
+	font-size: 30px;
+    position: absolute;
+    top: -15px;
+    left: 500px;
+    color: black;
+    }
+#title1
+{
+	font-family: 'Monotype Corsiva';
+	font-size: 20px;
+	position: absolute;
+    top: 30px;
+    left: 630px;
+    color: #0066CC;
+}
+
+footer{
+	font-family: 'Arial';
+	font-size: 15px;
+    text-align: right;
+    padding-left: 300px;
+	display: inline;
+	color: #0066CC;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}
+

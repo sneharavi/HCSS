@@ -1,0 +1,8 @@
+html,body{
+	cursor: url(Arrow3.cur),auto;
+		margin:0;
+	padding:0;
+	height: 100%;
+	background: #fff url(../images/bg.jpg) repeat top left;
+	
+}

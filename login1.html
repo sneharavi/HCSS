@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>High confidential security system</title>
+<script language="javascript">
+function clearAll()
+{
+document.f1.t1.value="";
+document.f1.t2.value="";
+document.f1.t3.value="";
+}
+vars=new Array();
+pair=new Array()
+res=new Array()
+qs=location.search.substring(1)
+vars=qs.split("&")
+var s=0;
+for(i=0;i<vars.length;++i)
+{
+if(s<=2)
+{
+pair=vars[i].split("=");
+res[s]=(pair[1]);
+s++;
+}
+}
+var m=res[0];
+var n=res[1];
+
+function hello()
+{
+if(m==null)
+{
+document.f1.t1.value=""
+document.f1.t2.value=""
+document.f1.t1.focus();
+}
+else
+  {
+     document.f1.t1.value=m;
+     document.f1.t2.value=n;
+}
+}
+
+function email()
+{
+var login=false;
+var x=document.f1;
+var user_id=new Array();
+user_id[0]="sneharavi03@gmail.com";
+user_id[1]="prakash_uva93@yahoo.com";
+user_id[2]="urmilaramsundar@gmail.com"
+var userpass=new Array();
+userpass[0]="sneha";
+userpass[1]="uva";
+userpass[2]="urmila";
+if((x.t1.value == null) || (x.t1.value == ""))
+{
+alert ("Enter your ID");
+x.t1.focus();
+}
+else  if((x.t2.value == null) || (x.t2.value == ""))
+  {       alert("Enter your Password");
+           x.t2.focus();
+    }
+else if (((x.t1.value != null) || (x.t1.value !="")) && ((x.t2.value != null) || (x.t2.value != "")))
+   {
+ for (i = 0; i <user_id.length; i++)
+    {   
+     if((x.t1.value==user_id[i]) &&(x.t2.value==userpass[i]))
+	{
+	    login=true;
+	    break;
+	}
+     }
+	if (login==false)
+
+	{
+	    //alert ("Invalid ID or  Password");
+	    x.t1.value="";
+	    x.t2.value="";
+	    x.t1.focus();
+	}
+	
+	else
+	   {
+	     //alert("Login Success");
+	     x.t1.value="";
+	    x.t2.value="";
+	    self.location = "transaction.jsp";
+	  }
+	
+     }
+
+}
+  </script>
+</head>
+
+<body bgColor="#5E5A80" onLoad="hello()" >
+
+  <h3><u>  <p align="center"> ADMINISTRATOR LOGIN PAGE</color></p> </u></h3>
+<form name="f1">
+<br>
+<br>
+	<table border=0  width=40% height=100 align=center>
+	<td colspan="2">
+    	<p align="center">&nbsp;<tr>
+	<td><b>Mail ID</font><td>
+    	<font color="#5E6CBA">
+    	<input type="text" name="t1" length="20"></font></tr>
+    	<tr>
+	<td><b>Password</font><td>
+    	<font color="WHITE">
+    	<input type="password" name="t2" length="20"> </font>
+	<tr><td colspan=2 align=center><table border=0>
+	<td><font color="#5E6CBA">
+
+
+	<input type="button" value="Login" onClick="email()" ></font>
+    	<td><td align=center>
+    	
+    	<input type="button" value=" Clear " onClick="clearAll()"> </font>
+	</table>
+	</table>
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
